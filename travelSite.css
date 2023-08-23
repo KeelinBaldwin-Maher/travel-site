@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: rgb(204, 245, 247);
 }
 
 header {
@@ -38,7 +38,7 @@ header {
     color: #049DBF;
 }
 
-#figure {
+figure {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,7 +46,7 @@ header {
     overflow: hidden;
 }
 
-#image1, #image2, #image3 {
+figure image {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,24 +54,11 @@ header {
     width: 1920px;
 }
 
-#image1 {
-    z-index: 3;
-}
-
-#image2 {
-    z-index: 2;
-}
-
-#image3 {
-    z-index: 1;
-}
-
-#figCaption {
+figure figcaption {
     font-weight: 500;
     position: absolute;
     bottom: 10%;
     left: 5%;
-    z-index: 5;
     background-color: #f0f6f7;
     padding: 2.5em;
     opacity: 0.8;
