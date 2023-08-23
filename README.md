@@ -12,3 +12,5 @@
   # Install
  1. Download ZIP
  2. Open *travelSite.html*
+
+ ![screenshot](screenshot.png)
