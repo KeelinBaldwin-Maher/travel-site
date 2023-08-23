@@ -20,16 +20,25 @@ const imageCaptions = [
     "Floating palace. </br>Photo: Mg Cthu",
     "Foggy field of palm trees. </br>Photo: Hans Eiskonen"];
 
+const figures = images.map((image, index) => {
+    return `
+        <figure>
+            <img src="${image}" alt="Sunny Skies Destinations">
+            <figcaption>${imageCaptions[index]}</figcaption>
+        </figure>`;
+});
+document.querySelector("main").innerHTML = figures.toString().replaceAll(",", "");
+
 slideShow();
 
 function slideShow() {
-    const image1 = document.querySelector("#image1");
-    const figCaption = document.querySelector("#figCaption");
+    const figures = Array.from(document.getElementsByTagName("figure"));
+    figures.forEach(figure => figure.style.opacity = 0);
+    figures[0].style.opacity = 1;
     let next = 0;
     setInterval(() => {
+        figures.forEach(figure => figure.style.opacity = 0);
         next = (next + 1) % images.length;
-        image1.setAttribute("src", images[next]);
-        figCaption.innerHTML = imageCaptions[next];
-    }, 3000);
+        figures[next].style.opacity = 1;
+    }, 4000);
 }
-
