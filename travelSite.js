@@ -40,5 +40,5 @@ function slideShow() {
         figures.forEach(figure => figure.style.opacity = 0);
         next = (next + 1) % images.length;
         figures[next].style.opacity = 1;
-    }, 4000);
+    }, 5000);
 }

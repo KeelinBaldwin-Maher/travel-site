@@ -13,7 +13,7 @@ header {
     border-top: 15px solid #04C4D9;
     padding: 0.5em;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     box-shadow: 2px 2px 1px #01232b6e;
 }
@@ -52,7 +52,6 @@ figure img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 figure figcaption {
     font-weight: 500;
